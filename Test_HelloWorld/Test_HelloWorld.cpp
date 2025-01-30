@@ -10,17 +10,20 @@ namespace TestHelloWorld
 	{
 	public:
 		
-		TEST_METHOD(TestMethod1)
+		TEST_METHOD(sanityCheck)
 		{
-			// answer test variable
+			Assert::AreEqual(true, true);
+		}
+		TEST_METHOD(funcClassTest)
+		{
 			std::string testStr = "Hello World!";
-
-			// class initialize
-			//funcClass whyIsItNamedDifferently;
-			// Class function call
-			//whyIsItNamedDifferently.HelloWorld(testStr);
-			// Test
-			Assert::AreEqual(testStr, testStr);
+			//Class myClass = new class();
+			//funcClass myClass;
+			// myClass(str);
+			//myClass.HelloWorld(testStr);
+			std::string answer = "Hello World!";
+			Assert::AreEqual(testStr, answer);
 		}
 	};
 }
+
