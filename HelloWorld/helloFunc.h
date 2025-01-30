@@ -14,4 +14,13 @@ public:
 	{
 		std::cout << hello;
 	}
+
+	template<typename input>
+	std::string CreateString(input stringconvert)
+	{
+		std::string translation;
+		translation = stringconvert;
+		return translation;
+	}
+
 };
