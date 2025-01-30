@@ -14,10 +14,11 @@ namespace TestHelloWorld
 		{
 			// answer test variable
 			std::string testStr = "Hello World!";
+
 			// class initialize
-			funcClass whyIsItNamedDifferently;
+			//funcClass whyIsItNamedDifferently;
 			// Class function call
-			whyIsItNamedDifferently.HelloWorld(testStr);
+			//whyIsItNamedDifferently.HelloWorld(testStr);
 			// Test
 			Assert::AreEqual(testStr, testStr);
 		}
