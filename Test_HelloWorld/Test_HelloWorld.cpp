@@ -18,7 +18,7 @@ namespace TestHelloWorld
 		{
 			std::string testStr = "Hello World!";
 			//Class myClass = new class();
-			//funcClass myClass;
+			funcClass myClass;
 			// myClass(str);
 			//myClass.HelloWorld(testStr);
 			std::string answer = "Hello World!";

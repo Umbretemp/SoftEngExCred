@@ -5,5 +5,10 @@ class funcClass
 private:
 
 public:
+	funcClass()
+	{
+
+	}
+
 	void HelloWorld(std::string hello);
 };
