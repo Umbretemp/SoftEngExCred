@@ -16,13 +16,17 @@ namespace TestHelloWorld
 		}
 		TEST_METHOD(funcClassTest)
 		{
-			std::string testStr = "Hello World!";
-			//Class myClass = new class();
+			std::string captureString;
+			std::stringstream captureStream;
+			// intercept cout to capture stream
+			std::cout.rdbuf(captureStream.rdbuf());
+			std::string answer = "Hello World!";
+			// Class myClass = new class();
 			funcClass myClass;
 			// myClass(str);
-			myClass.HelloWorld(testStr);
-			std::string answer = "Hello World!";
-			Assert::AreEqual(testStr, answer);
+			myClass.HelloWorld(answer);
+			captureString = captureStream.str();
+			Assert::AreEqual(captureString, answer);
 		}
 	};
 }
