@@ -20,7 +20,7 @@ namespace TestHelloWorld
 			//Class myClass = new class();
 			funcClass myClass;
 			// myClass(str);
-			//myClass.HelloWorld(testStr);
+			myClass.HelloWorld(testStr);
 			std::string answer = "Hello World!";
 			Assert::AreEqual(testStr, answer);
 		}
