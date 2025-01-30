@@ -18,9 +18,9 @@ namespace TestHelloWorld
 		{
 			std::string testStr = "Hello World!";
 			//Class myClass = new class();
-			funcClass myClass;
+			funcClass* myClass = new funcClass();
 			// myClass(str);
-			myClass.HelloWorld(testStr);
+			myClass->HelloWorld(testStr);
 			std::string answer = "Hello World!";
 			Assert::AreEqual(testStr, answer);
 		}
