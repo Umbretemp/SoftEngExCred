@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "CppUnitTest.h"
+#include "..\HelloWorld\helloFunc.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -14,7 +15,7 @@ namespace TestHelloWorld
 			// answer test variable
 			std::string testStr = "Hello World!";
 			// class initialize
-			//funcClass whyIsItNamedDifferently;
+			funcClass whyIsItNamedDifferently;
 			// Class function call
 			//whyIsItNamedDifferently.HelloWorld(testStr);
 			// Test
