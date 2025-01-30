@@ -14,4 +14,5 @@ public:
 	{
 		std::cout << hello;
 	}
+	// make simpler method for hello world
 };
