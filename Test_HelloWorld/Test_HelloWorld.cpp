@@ -12,6 +12,14 @@ namespace TestHelloWorld
 		
 		TEST_METHOD(TestMethod1)
 		{
+			// answer test variable
+			std::string testStr = "Hello World!";
+			// class initialize
+
+			// Class function call
+
+			// Test
+			Assert::AreEqual(testStr, testStr);
 		}
 	};
 }
