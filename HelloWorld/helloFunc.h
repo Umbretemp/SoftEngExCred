@@ -10,5 +10,8 @@ public:
 
 	}
 
-	void HelloWorld(std::string hello);
+	void HelloWorld(std::string hello)
+	{
+		std::cout << hello;
+	}
 };
